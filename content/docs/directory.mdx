@@ -1,0 +1,35 @@
+---
+title: Directory
+description: Trust anchor — participants, JWKS, and Software Statement Assertions.
+---
+
+# Directory
+
+The Open Law Directory is the **trust anchor** of the ecosystem. It registers participants, hosts public signing keys, and issues signed **Software Statement Assertions (SSAs)** that TPPs present during Dynamic Client Registration.
+
+## Responsibilities
+
+- Register organisations and software products
+- Publish Directory and participant JWKS
+- Issue SSA JWTs for registered software
+- Support `softwareAudience: client-facing` and `firm-facing`
+
+## Key endpoints
+
+| Endpoint | Purpose |
+| --- | --- |
+| `POST/GET /participants` | Register and list organisations |
+| `GET /participants/{id}` | Retrieve a participant |
+| `POST/GET /participants/{id}/software` | Register and list software |
+| `GET /software/{id}/assertion` | Obtain a signed SSA JWT |
+| `GET /.well-known/jwks.json` | Directory signing keys |
+
+## Reference implementation
+
+A NestJS (Fastify) reference service with Prisma and Postgres is published at [openlawuk/directory](https://github.com/openlawuk/directory). Planned production host: `directory.openlaw.org.uk`.
+
+## Related
+
+- [Dynamic Client Registration](/docs/dcr)
+- [Ecosystem](/docs/ecosystem)
+- OpenAPI: see the directory repository `apis/directory-openapi.yaml`

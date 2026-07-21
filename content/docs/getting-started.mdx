@@ -1,0 +1,32 @@
+---
+title: Getting started
+description: Explore standards, run the reference stack, and choose a connectivity path.
+---
+
+# Getting started
+
+## 1. Learn the model
+
+Read [Overview](/docs/overview) and [Ecosystem](/docs/ecosystem) so Directory → DCR → Access is clear before writing code.
+
+## 2. Clone the open rails
+
+| Repository | Purpose |
+| --- | --- |
+| [specification](https://github.com/openlawuk/specification) | Ontology and schemas |
+| [directory](https://github.com/openlawuk/directory) | Trust anchor reference |
+| [dynamic-client-registration](https://github.com/openlawuk/dynamic-client-registration) | DCR profile |
+| [read-write-api](https://github.com/openlawuk/read-write-api) | Resource API standard |
+| [open-data-api](https://github.com/openlawuk/open-data-api) | Public discovery |
+| [reference-tsp](https://github.com/openlawuk/reference-tsp) | Full demo firm stack |
+| [conformance-suite](https://github.com/openlawuk/conformance-suite) | Attestation CLI |
+
+Follow each repository README for install and `pnpm`/`npm` commands.
+
+## 3. Run a local sandbox
+
+The reference TSP sandbox scripts (see `openlawuk-reference-tsp`) start Directory, firm APIs, and consent UI together so you can walk a full client journey.
+
+## 4. Optional: hosted connectivity
+
+If you are building a client-facing app and want one API key instead of operating SSA/DCR/token plumbing, evaluate [Mattertwo Connect](https://www.mattertwo.com).

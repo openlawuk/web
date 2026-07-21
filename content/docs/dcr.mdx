@@ -1,0 +1,28 @@
+---
+title: Dynamic Client Registration
+description: RFC 7591/7592 profile using Directory SSAs at firm TSPs.
+---
+
+# Dynamic Client Registration
+
+Open Law profiles OAuth **Dynamic Client Registration** (RFC 7591/7592) so a TPP can register at a firm&apos;s TSP using a Directory-issued SSA — without a firm pre-approving every client-facing app.
+
+## Why DCR matters
+
+Without DCR, every app would need bilateral onboarding at every firm. With Directory SSAs + DCR:
+
+- Client-facing software joins the open marketplace
+- TSPs validate cryptographic software identity
+- Registration can be cached and reused (as Mattertwo Connect does per firm)
+
+## Profile highlights
+
+- SSA presented during registration
+- Client metadata consistent with FAPI 2.0 security expectations
+- Distinct handling for client-facing vs firm-facing audiences
+
+## Spec & implementation
+
+Normative profile and reference material: [openlawuk/dynamic-client-registration](https://github.com/openlawuk/dynamic-client-registration).
+
+App builders who do not want to operate DCR themselves can use **Mattertwo Connect**, which performs and caches DCR against firm TSPs behind a single API key.

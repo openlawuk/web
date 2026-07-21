@@ -1,0 +1,30 @@
+---
+title: Read/Write API
+description: FAPI 2.0 resource APIs for legal practice data.
+---
+
+# Read/Write API
+
+The Open Law Read/Write API is the secured resource layer for practice data — matters, parties, documents, financials, scheduling, and related profiles — protected with **FAPI 2.0** patterns (including PAR and PKCE where required).
+
+## What it exposes
+
+Resource APIs are organised by conformance profiles, including:
+
+- Authorisations and consent-linked access
+- Parties and matters
+- Documents
+- Financials / invoices
+- Scheduling
+
+Exact paths and schemas are defined in the [read-write-api](https://github.com/openlawuk/read-write-api) repository and the shared [specification](https://github.com/openlawuk/specification) ontology.
+
+## Security expectations
+
+- Client consent at the firm TSP
+- Client-tier scopes and **client-visible data boundaries**
+- Token lifecycle aligned with FAPI
+
+## For app builders
+
+You may call firm TSP endpoints directly after DCR and consent, or use a commercial connectivity layer such as Mattertwo Connect that normalises multi-firm access.

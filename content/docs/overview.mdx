@@ -1,0 +1,31 @@
+---
+title: Overview
+description: What Open Law is and why legal practice data needs open rails.
+---
+
+# Overview
+
+Open Law is a **public, vendor-neutral** framework for legal practice data portability. It provides a trust anchor (Directory), registration profile (Dynamic Client Registration), secure resource APIs (Read/Write), and public discovery (Open Data) so third-party applications can work across practice systems without rebuilding domain models for each vendor.
+
+## Why it exists
+
+Law firms run on fragmented practice management stacks. Clients increasingly expect to choose their own software — fee tools, matter hubs, collaboration apps — without waiting for firm IT procurement. Open Law separates:
+
+1. **Open rails** — standards anyone can implement (Apache-2.0)
+2. **Commercial connectivity** — optional hosted products such as Mattertwo Connect
+
+## Core philosophy: client sovereignty
+
+Clients authorise access to **their own** data. Firms host infrastructure but do not gate which client-facing apps clients use. Firm-delegation B2B tools use a separate participation model.
+
+## Stack at a glance
+
+| Layer | Role |
+| --- | --- |
+| Directory | Participants, JWKS, Software Statement Assertions (SSAs) |
+| DCR | Register at a firm TSP with an SSA |
+| Read/Write API | FAPI 2.0 access to matters, documents, financials, and more |
+| Open Data API | Public discovery and price transparency without OAuth |
+| Conformance | Prove Directory, auth, and client data boundary behaviour |
+
+Normative specifications live in the [Open Law GitHub organisation](https://github.com/openlawuk).
