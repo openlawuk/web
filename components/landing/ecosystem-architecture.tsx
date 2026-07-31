@@ -41,7 +41,7 @@ export function EcosystemArchitecture() {
           {nodes.map((node) => (
             <div
               key={node.title}
-              className="border-t border-cream/20 pt-8 flex flex-col gap-stack-md"
+              className="border-t border-cream pt-8 flex flex-col gap-stack-md"
             >
               <div className="w-12 h-12 flex items-center justify-center text-lime">
                 <span className="material-symbols-outlined text-2xl">
@@ -61,10 +61,10 @@ export function EcosystemArchitecture() {
 
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
-            href="/docs/directory"
+            href="/documentation/directory"
             className={cn(buttonVariants({ variant: "on-color" }))}
           >
-            Directory docs
+            Directory documentation
           </Link>
           <Link
             href="/ecosystem"

@@ -9,7 +9,7 @@ export const metadata: Metadata = pageMetadata(
 
 const standards = [
   {
-    href: "/docs/directory",
+    href: "/documentation/directory",
     title: "Directory",
     description:
       "Trust anchor: participants, JWKS, and Software Statement Assertions.",
@@ -17,7 +17,7 @@ const standards = [
     tone: "green" as const,
   },
   {
-    href: "/docs/dcr",
+    href: "/documentation/dcr",
     title: "Dynamic Client Registration",
     description:
       "RFC 7591/7592 profile so TPPs register at firm TSPs with a Directory SSA.",
@@ -25,7 +25,7 @@ const standards = [
     tone: "indigo" as const,
   },
   {
-    href: "/docs/read-write-api",
+    href: "/documentation/read-write-api",
     title: "Read/Write API",
     description:
       "FAPI 2.0 resource APIs for matters, documents, financials, and more.",
@@ -33,7 +33,7 @@ const standards = [
     tone: "lime" as const,
   },
   {
-    href: "/docs/open-data-api",
+    href: "/documentation/open-data-api",
     title: "Open Data API",
     description:
       "Public discovery: code lists, participants, and published prices.",
@@ -41,15 +41,15 @@ const standards = [
     tone: "peach" as const,
   },
   {
-    href: "/docs/conformance",
+    href: "/documentation/conformance",
     title: "Conformance",
     description:
       "CLI suite covering directory, DCR, auth, FAPI hygiene, and client boundaries.",
     eyebrow: "Verification",
-    tone: "indigo" as const,
+    tone: "sky" as const,
   },
   {
-    href: "/docs/overview",
+    href: "/documentation/overview",
     title: "Data model",
     description: "Vendor-neutral ontology for legal practice management data.",
     eyebrow: "Ontology",
@@ -80,10 +80,8 @@ export default function StandardsPage() {
           eyebrow="Standards"
           title="The Open Law specification stack"
           description="Normative specs live in the Open Law GitHub organisation. This site summarises how the pieces fit for implementers and product teams."
-          primaryHref="/docs"
-          primaryLabel="Browse docs"
-          secondaryHref="https://github.com/openlawuk"
-          secondaryLabel="GitHub"
+          primaryHref="/documentation"
+          primaryLabel="Browse documentation"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {standards.map((item) => (
@@ -102,7 +100,7 @@ export default function StandardsPage() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {capabilities.map((group) => (
-              <div key={group.title} className="border-t border-indigo/20 pt-6">
+              <div key={group.title} className="border-t border-indigo pt-6">
                 <h3 className="font-heading text-headline-sm text-indigo mb-4">
                   {group.title}
                 </h3>

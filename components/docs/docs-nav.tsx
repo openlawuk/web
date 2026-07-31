@@ -10,11 +10,9 @@ export function DocsNav() {
 
   return (
     <nav className="flex flex-col gap-1">
-      <p className="text-label-sm text-on-surface-variant mb-3 uppercase tracking-wide">
-        Documentation
-      </p>
+      <p className="text-label-md text-accent mb-4">Documentation</p>
       {docsNav.map((item) => {
-        const href = `/docs/${item.slug}`;
+        const href = `/documentation/${item.slug}`;
         const active = pathname === href;
         return (
           <Link

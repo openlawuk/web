@@ -16,12 +16,12 @@ const staticRoutes = [
   "/about",
   "/privacy",
   "/governance",
-  "/docs",
+  "/documentation",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const docs = getDocSlugs().map((slug) => ({
-    url: `${baseUrl}/docs/${slug}`,
+    url: `${baseUrl}/documentation/${slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.7,

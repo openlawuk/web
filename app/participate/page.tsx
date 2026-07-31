@@ -13,9 +13,9 @@ export default function ParticipatePage() {
         eyebrow="Participate"
         title="Join the Open Law marketplace"
         description="Register as a Directory participant, publish software credentials, implement or consume Open Law APIs, and attest with the conformance suite."
-        primaryHref="/docs/directory"
+        primaryHref="/documentation/directory"
         primaryLabel="Directory guide"
-        secondaryHref="/docs/getting-started"
+        secondaryHref="/documentation/getting-started"
         secondaryLabel="Getting started"
       />
       <div className="prose-openlaw max-w-3xl">

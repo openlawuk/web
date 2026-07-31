@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowForward } from "@/components/ui/arrow-forward";
 import { cn } from "@/lib/cn";
 
 type ContentCardProps = {
@@ -6,7 +7,7 @@ type ContentCardProps = {
   title: string;
   description: string;
   eyebrow?: string;
-  tone?: "cream" | "lime" | "peach" | "green" | "indigo";
+  tone?: "cream" | "lime" | "peach" | "sky" | "green" | "indigo";
   external?: boolean;
   className?: string;
 };
@@ -15,6 +16,7 @@ const toneClasses = {
   cream: "bg-cream text-indigo",
   lime: "bg-lime text-indigo",
   peach: "bg-peach text-indigo",
+  sky: "bg-sky text-indigo",
   green: "bg-green text-cream",
   indigo: "bg-indigo text-cream",
 } as const;
@@ -46,11 +48,11 @@ export function ContentCard({
         ) : null}
         <h3 className="font-heading text-headline-sm">{title}</h3>
       </div>
-      <div className="flex-1 p-6 bg-cream border-t border-indigo/10">
+      <div className="flex-1 p-6 bg-cream">
         <p className="text-body-md text-on-surface-variant">{description}</p>
         <span className="inline-flex items-center gap-2 mt-4 text-label-md text-indigo group-hover:text-accent transition-colors">
           Learn more
-          <span className="material-symbols-outlined text-sm">arrow_forward</span>
+          <ArrowForward />
         </span>
       </div>
     </>

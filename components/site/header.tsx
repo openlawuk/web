@@ -20,7 +20,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-cream/95 backdrop-blur-sm border-b border-indigo/10">
+    <header className="sticky top-0 z-50 w-full bg-cream/95 backdrop-blur-sm">
       <div className="section-inner flex justify-between items-center py-4 relative">
         <div className="flex items-center gap-3 md:gap-4">
           <Link
@@ -29,7 +29,7 @@ export function Header() {
           >
             Open Law
           </Link>
-          <p className="hidden md:block text-label-sm text-on-surface-variant border-l border-indigo/15 pl-4 max-w-[14rem] leading-snug">
+          <p className="hidden md:block text-label-sm text-on-surface-variant border-l border-indigo pl-4 max-w-[14rem] leading-snug">
             Open standards for legal data portability
           </p>
         </div>
@@ -83,7 +83,7 @@ export function Header() {
         </div>
 
         {open ? (
-          <div className="absolute top-full inset-x-0 bg-cream border-b border-indigo/10 lg:hidden z-40">
+          <div className="absolute top-full inset-x-0 bg-cream lg:hidden z-40">
             <div className="section-inner py-4 flex flex-col gap-2">
               {mainNav.map((item) => (
                 <Link

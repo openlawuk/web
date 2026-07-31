@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero, pageMetadata } from "@/components/site/page-hero";
 import { ContentCard } from "@/components/ui/content-card";
-import { siteUrls } from "@/lib/site-nav";
 
 export const metadata: Metadata = pageMetadata(
   "Developers",
@@ -24,7 +23,7 @@ const resources = [
       "CLI covering Directory, DCR, auth, FAPI hygiene, and client data boundaries.",
     href: "https://github.com/openlawuk/conformance-suite",
     eyebrow: "Verification",
-    tone: "indigo" as const,
+    tone: "sky" as const,
     external: true,
   },
   {
@@ -32,7 +31,7 @@ const resources = [
     description:
       "Ontology, JSON Schema, and participation models for legal practice data.",
     href: "https://github.com/openlawuk/specification",
-    eyebrow: "Docs",
+    eyebrow: "Documentation",
     tone: "lime" as const,
     external: true,
   },
@@ -45,10 +44,8 @@ export default function DevelopersPage() {
         eyebrow="Developers"
         title="Build on the open rails"
         description="Run the reference stack locally, explore OpenAPI specs, and prove compliance with the conformance suite. Use Mattertwo Connect only if you want hosted multi-firm connectivity."
-        primaryHref="/docs/getting-started"
+        primaryHref="/documentation/getting-started"
         primaryLabel="Getting started"
-        secondaryHref={siteUrls.githubOrg}
-        secondaryLabel="GitHub org"
       />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {resources.map((card) => (

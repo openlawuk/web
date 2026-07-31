@@ -15,7 +15,7 @@ export default function FirmsPage() {
         description="Firms host practice infrastructure — usually via a TSP — while clients authorise which applications can access their own matters, documents, and financials."
         primaryHref="/participate"
         primaryLabel="How firms join"
-        secondaryHref="/docs/ecosystem"
+        secondaryHref="/documentation/ecosystem"
         secondaryLabel="Participation models"
       />
       <div className="prose-openlaw max-w-3xl">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowForward } from "@/components/ui/arrow-forward";
 
 const offers = [
   {
@@ -36,12 +37,12 @@ export function WhatWeOffer() {
       <div className="section-inner">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="max-w-xl">
-            <p className="text-label-md text-indigo/70 mb-3">What we offer</p>
+            <p className="text-label-md text-indigo mb-3">What we offer</p>
             <h2 className="font-heading text-headline-md text-indigo">
               One framework for every participant
             </h2>
           </div>
-          <p className="text-body-md text-indigo/80 max-w-md">
+          <p className="text-body-md text-indigo max-w-md">
             Open Law is the vendor-neutral layer for legal practice data
             portability — Directory trust, Dynamic Client Registration, and
             standardised Access APIs.
@@ -53,7 +54,7 @@ export function WhatWeOffer() {
             <Link
               key={offer.title}
               href={offer.href}
-              className="group flex flex-col h-full bg-white p-6 gap-4 hover:ring-1 hover:ring-indigo/15 transition-shadow"
+              className="group flex flex-col h-full bg-white p-6 gap-4 transition-transform hover:-translate-y-0.5"
             >
               <span className="material-symbols-outlined text-2xl text-indigo">
                 {offer.icon}
@@ -66,9 +67,7 @@ export function WhatWeOffer() {
               </p>
               <span className="inline-flex items-center gap-2 text-label-md font-medium text-indigo group-hover:text-accent transition-colors">
                 Find out more
-                <span className="material-symbols-outlined text-base">
-                  arrow_forward
-                </span>
+                <ArrowForward />
               </span>
             </Link>
           ))}

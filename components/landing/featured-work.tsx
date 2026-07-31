@@ -16,10 +16,10 @@ const featured = [
     description:
       "Third-party providers build client-facing software on a common trust and data model — without rebuilding per practice system.",
     eyebrow: "Ecosystem",
-    tone: "indigo" as const,
+    tone: "sky" as const,
   },
   {
-    href: "/docs/directory",
+    href: "/documentation/directory",
     title: "Open Law Directory",
     description:
       "The trust anchor: register participants, publish JWKS, and issue Software Statement Assertions for marketplace access.",
@@ -30,7 +30,7 @@ const featured = [
 
 export function FeaturedWork() {
   return (
-    <section className="section-full-bleed section-cream py-module border-t border-indigo/10">
+    <section className="section-full-bleed section-cream py-module border-t border-indigo">
       <div className="section-inner">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <h2 className="font-heading text-headline-md text-indigo">

@@ -13,7 +13,7 @@ export default function RegulatoryPage() {
         eyebrow="Ecosystem · Regulatory"
         title="Regulators and policymakers"
         description="Open Law supports price transparency via Open Data, mandatory client-visible data boundaries, and self-attested conformance — a regulator-ready posture for an open legal software marketplace."
-        primaryHref="/docs/open-data-api"
+        primaryHref="/documentation/open-data-api"
         primaryLabel="Open Data API"
         secondaryHref="/governance"
         secondaryLabel="Governance"

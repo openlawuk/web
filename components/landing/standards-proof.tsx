@@ -47,7 +47,7 @@ export function StandardsProof() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {proofs.map((item) => (
-            <div key={item.label} className="border-t border-indigo/20 pt-6">
+            <div key={item.label} className="border-t border-indigo pt-6">
               <p className="text-label-sm text-indigo/60 mb-3">{item.label}</p>
               <p className="font-heading text-headline-sm text-indigo mb-2">
                 {item.value}

@@ -3,7 +3,7 @@ export const mainNav = [
   { href: "/ecosystem", label: "Ecosystem", match: "/ecosystem" },
   { href: "/standards", label: "Standards", match: "/standards" },
   { href: "/developers", label: "Developers", match: "/developers" },
-  { href: "/docs", label: "Docs", match: "/docs" },
+  { href: "/documentation", label: "Documentation", match: "/documentation" },
   { href: "/participate", label: "Participate", match: "/participate" },
 ] as const;
 
@@ -13,7 +13,7 @@ export const footerColumns = [
     links: [
       { href: "/ecosystem", label: "Ecosystem" },
       { href: "/standards", label: "Standards" },
-      { href: "/docs/directory", label: "Directory" },
+      { href: "/documentation/directory", label: "Directory" },
       { href: "/developers", label: "Developers" },
     ],
   },
@@ -23,7 +23,7 @@ export const footerColumns = [
       { href: "/participate", label: "Join Open Law" },
       { href: "/ecosystem/providers", label: "For TSPs" },
       { href: "/ecosystem/apps", label: "For app builders" },
-      { href: "/docs", label: "Documentation" },
+      { href: "/documentation", label: "Documentation" },
     ],
   },
   {

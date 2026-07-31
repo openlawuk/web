@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { footerColumns, siteUrls } from "@/lib/site-nav";
+import { footerColumns } from "@/lib/site-nav";
 import { NewsletterSignup } from "@/components/site/newsletter-signup";
 
 export function Footer() {
   return (
-    <footer className="section-full-bleed section-indigo mt-auto">
-      <div className="section-inner py-stack-lg grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <footer className="section-full-bleed section-indigo pb-module">
+      <div className="section-inner pt-module grid grid-cols-1 md:grid-cols-12 gap-gutter">
         <div className="md:col-span-4 flex flex-col gap-4">
           <span className="font-heading text-headline-sm text-cream tracking-tight">
             Open Law
@@ -15,16 +15,8 @@ export function Footer() {
             practice data portability.
           </p>
           <p className="text-body-sm text-cream/50">
-            © {new Date().getFullYear()} Open Law Project
+            © {new Date().getFullYear()} Open Law
           </p>
-          <a
-            href={siteUrls.githubOrg}
-            className="text-body-sm text-cream/70 hover:text-accent transition-colors w-fit"
-            rel="noreferrer"
-            target="_blank"
-          >
-            GitHub
-          </a>
         </div>
         <div className="md:col-span-5 grid grid-cols-2 sm:grid-cols-3 gap-8">
           {footerColumns.map((column) => (

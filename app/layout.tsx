@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CookieBanner } from "@/components/site/cookie-banner";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { SiteCta } from "@/components/site/site-cta";
@@ -38,8 +39,11 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-background text-on-background font-sans relative overflow-x-hidden">
         <Header />
         <div className="flex-1 flex flex-col">{children}</div>
-        <SiteCta />
-        <Footer />
+        <div className="mt-auto">
+          <SiteCta />
+          <Footer />
+        </div>
+        <CookieBanner />
       </body>
     </html>
   );

@@ -40,7 +40,7 @@ export function FilterTabs({ tabs, className }: FilterTabsProps) {
               "px-4 py-2 text-label-md border transition-colors",
               active
                 ? "bg-indigo text-cream border-indigo"
-                : "bg-transparent text-indigo border-indigo/20 hover:border-accent hover:text-accent",
+                : "bg-transparent text-indigo border-indigo hover:border-accent hover:text-accent",
             )}
             aria-current={active ? "page" : undefined}
           >

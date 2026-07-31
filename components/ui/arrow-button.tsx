@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowForward } from "@/components/ui/arrow-forward";
 import { cn } from "@/lib/cn";
 
 type ArrowButtonProps = {
@@ -45,9 +46,7 @@ function ArrowButtonInner({
     >
       <ArrowShape />
       <span className="relative z-10">{children}</span>
-      <span className="material-symbols-outlined relative z-10 text-lg">
-        arrow_forward
-      </span>
+      <ArrowForward className="relative z-10" />
     </span>
   );
 }

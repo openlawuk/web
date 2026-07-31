@@ -15,14 +15,14 @@ const approaches = [
 
 export function ApproachSection() {
   return (
-    <section className="section-full-bleed section-cream py-module border-t border-indigo/10">
+    <section className="section-full-bleed section-cream py-module border-t border-indigo">
       <div className="section-inner">
         <h2 className="font-heading text-headline-md text-indigo mb-12 max-w-xl">
           Collaborative by design
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
           {approaches.map((item) => (
-            <div key={item.title} className="border-t border-indigo/15 pt-8">
+            <div key={item.title} className="border-t border-indigo pt-8">
               <h3 className="font-heading text-headline-sm text-indigo mb-4">
                 {item.title}
               </h3>

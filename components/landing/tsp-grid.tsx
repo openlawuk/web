@@ -63,9 +63,9 @@ export function TspGrid() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-stack-md">
           {providers.map((provider) => {
             const className = cn(
-              "border border-indigo/15 p-stack-md flex flex-col items-center justify-center h-28 transition-colors group",
+              "border border-indigo p-stack-md flex flex-col items-center justify-center h-28 transition-colors group",
               provider.featured
-                ? "bg-lime/30 border-indigo/25 hover:border-accent"
+                ? "bg-lime/30 hover:border-accent"
                 : "bg-cream hover:border-accent",
             );
 

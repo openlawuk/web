@@ -15,7 +15,7 @@ export default function ProvidersPage() {
         eyebrow="Ecosystem · TSPs"
         title="Technical service providers"
         description="TSPs implement Directory-backed Dynamic Client Registration, consent UX, and FAPI Read/Write APIs so firms can participate without building the stack from scratch."
-        primaryHref="/docs/conformance"
+        primaryHref="/documentation/conformance"
         primaryLabel="Conformance suite"
         secondaryHref="/developers"
         secondaryLabel="Reference TSP"
@@ -39,7 +39,7 @@ export default function ProvidersPage() {
         </p>
         <p>
           Build against the{" "}
-          <Link href="/docs/getting-started">reference TSP</Link> and attest
+          <Link href="/documentation/getting-started">reference TSP</Link> and attest
           with the conformance suite before production.
         </p>
       </div>

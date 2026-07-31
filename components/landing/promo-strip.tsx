@@ -8,12 +8,12 @@ export function PromoStrip() {
           <p className="text-body-lg text-indigo">
             How ready is your organisation for legal data portability?
           </p>
-          <p className="text-body-md text-indigo/80 mt-2">
+          <p className="text-body-md text-indigo mt-2">
             Explore the conformance suite and participation path in under ten
             minutes.
           </p>
         </div>
-        <ArrowButton href="/docs/conformance" slim>
+        <ArrowButton href="/documentation/conformance" slim>
           Evaluate readiness
         </ArrowButton>
       </div>

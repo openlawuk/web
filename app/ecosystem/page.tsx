@@ -39,7 +39,7 @@ const roles = [
     description:
       "Client-facing and firm-facing software that discovers firms and exchanges data under client consent.",
     eyebrow: "TPP",
-    tone: "indigo" as const,
+    tone: "sky" as const,
   },
   {
     href: "/ecosystem/providers",
@@ -66,8 +66,8 @@ export default function EcosystemPage() {
         eyebrow="Ecosystem"
         title="Participants transforming legal data exchange"
         description="Open Law maps the Open Banking participant model to legal practice: LSPs host data, TPPs build apps, TSPs run the APIs, and clients remain the data subjects."
-        primaryHref="/docs/ecosystem"
-        primaryLabel="Ecosystem docs"
+        primaryHref="/documentation/ecosystem"
+        primaryLabel="Ecosystem documentation"
         secondaryHref="/participate"
         secondaryLabel="Participate"
       />

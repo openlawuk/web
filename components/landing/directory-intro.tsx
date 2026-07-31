@@ -9,15 +9,15 @@ export function DirectoryIntro() {
           <h2 className="font-heading text-headline-md md:text-headline-lg text-cream tracking-tight">
             Introducing the Open Law Directory
           </h2>
-          <p className="text-body-lg text-cream/80">
+          <p className="text-body-lg text-cream">
             Register participants, publish JWKS, and issue Software Statement
             Assertions (SSAs). Client-facing apps present an SSA at Dynamic
             Client Registration — without firm allowlisting for open marketplace
             access.
           </p>
           <div className="flex flex-wrap gap-6 pt-2">
-            <ArrowButton href="/docs/directory" reverse slim>
-              Directory docs
+            <ArrowButton href="/documentation/directory" reverse slim>
+              Directory documentation
             </ArrowButton>
             <ArrowButton href="/ecosystem" reverse slim>
               Explore ecosystem

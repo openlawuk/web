@@ -10,7 +10,7 @@ export function QuoteBlock() {
           <cite className="text-body-md text-lime not-italic font-medium">
             Open Law Project
           </cite>
-          <p className="text-body-sm text-cream/70">
+          <p className="text-body-sm text-cream">
             Public standards for legal practice data portability
           </p>
         </footer>

@@ -15,9 +15,8 @@ export default function DocsIndexPage() {
 
   return (
     <div>
-      <p className="text-label-md text-accent mb-4">Documentation</p>
-      <h1 className="font-heading text-headline-lg text-indigo tracking-tight mb-3">
-        Documentation
+      <h1 className="font-heading text-headline-lg-mobile md:text-headline-lg text-indigo tracking-tight mb-4">
+        Guides for the Open Law framework
       </h1>
       <p className="text-body-lg text-on-surface-variant mb-8 max-w-2xl">
         Guides for the Open Law public site. Normative specifications live in
@@ -27,8 +26,8 @@ export default function DocsIndexPage() {
         {docs.map((doc) => (
           <li key={doc.slug}>
             <Link
-              href={`/docs/${doc.slug}`}
-              className="block border-t border-indigo/15 py-4 hover:border-accent transition-colors"
+              href={`/documentation/${doc.slug}`}
+              className="block border-t border-indigo py-4 hover:border-accent transition-colors"
             >
               <span className="font-heading text-headline-sm text-indigo">
                 {doc.frontmatter.title}

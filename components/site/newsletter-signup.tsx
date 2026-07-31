@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ArrowForward } from "@/components/ui/arrow-forward";
 
 export function NewsletterSignup() {
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ export function NewsletterSignup() {
       <p className="text-body-sm text-cream/70">
         Get standards updates and ecosystem news from Open Law.
       </p>
-      <div className="flex border-b border-cream/40 focus-within:border-accent transition-colors">
+      <div className="flex border-b border-cream focus-within:border-accent transition-colors">
         <input
           type="email"
           name="email"
@@ -32,10 +33,10 @@ export function NewsletterSignup() {
         />
         <button
           type="submit"
-          className="text-cream hover:text-accent transition-colors px-2"
+          className="text-cream hover:text-accent transition-colors px-2 text-body-sm"
           aria-label="Sign up for updates"
         >
-          <span className="material-symbols-outlined">arrow_forward</span>
+          <ArrowForward />
         </button>
       </div>
     </form>

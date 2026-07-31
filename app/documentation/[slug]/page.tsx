@@ -32,10 +32,5 @@ export default async function DocPage({ params }: PageProps) {
     notFound();
   }
 
-  return (
-    <>
-      <p className="text-label-md text-accent mb-4">{doc.frontmatter.title}</p>
-      <MDXRemote source={doc.content} />
-    </>
-  );
+  return <MDXRemote source={doc.content} />;
 }
