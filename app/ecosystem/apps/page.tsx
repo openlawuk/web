@@ -18,7 +18,7 @@ export default function AppsPage() {
         secondaryHref="/docs/dcr"
         secondaryLabel="Dynamic Client Registration"
       />
-      <div className="prose-openlaw max-w-3xl tech-border bg-white/90 p-8">
+      <div className="prose-openlaw max-w-3xl">
         <h2>Client-facing vs firm-facing</h2>
         <p>
           <strong>Client-facing</strong> software uses{" "}

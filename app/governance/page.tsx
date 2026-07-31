@@ -14,7 +14,7 @@ export default function GovernancePage() {
         title="Governance"
         description="Open Law specifications and reference implementations are maintained in public repositories under Apache-2.0."
       />
-      <div className="prose-openlaw max-w-3xl tech-border bg-white/90 p-8">
+      <div className="prose-openlaw max-w-3xl">
         <h2>Principles</h2>
         <ul>
           <li>Vendor-neutral standards separate from commercial products</li>

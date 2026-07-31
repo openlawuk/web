@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import { Hanken_Grotesk } from "next/font/google";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
+import { SiteCta } from "@/components/site/site-cta";
 import "./globals.css";
-
-const hanken = Hanken_Grotesk({
-  variable: "--font-hanken-grotesk",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.openlaw.org.uk"),
@@ -40,13 +34,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${hanken.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-background text-on-background font-sans bg-blueprint relative overflow-x-hidden">
-        <div className="fixed inset-0 z-[-2] bg-gradient-to-br from-surface-container-low via-white/80 to-secondary-fixed/30 pointer-events-none" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-fixed/50 blur-[120px] rounded-full pointer-events-none -z-10" />
-        <div className="absolute top-[40%] left-[-10%] w-[500px] h-[500px] bg-tertiary-fixed/60 blur-[120px] rounded-full pointer-events-none -z-10" />
+    <html lang="en" className="h-full antialiased">
+      <body className="min-h-full flex flex-col bg-background text-on-background font-sans relative overflow-x-hidden">
         <Header />
         <div className="flex-1 flex flex-col">{children}</div>
+        <SiteCta />
         <Footer />
       </body>
     </html>

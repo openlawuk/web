@@ -20,7 +20,7 @@ export default function ProvidersPage() {
         secondaryHref="/developers"
         secondaryLabel="Reference TSP"
       />
-      <div className="prose-openlaw max-w-3xl tech-border bg-white/90 p-8 mb-8">
+      <div className="prose-openlaw max-w-3xl mb-8">
         <h2>Mattertwo — commercial TSP connectivity</h2>
         <p>
           <a href={siteUrls.mattertwo} target="_blank" rel="noreferrer">

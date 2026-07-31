@@ -14,7 +14,7 @@ export default function AboutPage() {
         title="The global standard for legal transparency"
         description="Open Law defines how legal practice data is discovered, trusted, and exchanged — vendor-neutral rails so clients can authorise apps of their choice."
       />
-      <div className="prose-openlaw max-w-3xl tech-border bg-white/90 p-8">
+      <div className="prose-openlaw max-w-3xl">
         <p>
           Inspired by Open Banking&apos;s separation of standards from commercial
           connectivity, Open Law publishes Directory, Dynamic Client

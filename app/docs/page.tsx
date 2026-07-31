@@ -15,10 +15,8 @@ export default function DocsIndexPage() {
 
   return (
     <div>
-      <p className="font-mono text-[10px] text-brand-emerald border border-brand-emerald/30 inline-block px-2 mb-4">
-        DOCS.INDEX
-      </p>
-      <h1 className="text-headline-lg text-brand-navy font-semibold tracking-tight mb-3">
+      <p className="text-label-md text-accent mb-4">Documentation</p>
+      <h1 className="font-heading text-headline-lg text-indigo tracking-tight mb-3">
         Documentation
       </h1>
       <p className="text-body-lg text-on-surface-variant mb-8 max-w-2xl">
@@ -30,9 +28,9 @@ export default function DocsIndexPage() {
           <li key={doc.slug}>
             <Link
               href={`/docs/${doc.slug}`}
-              className="block tech-border p-4 hover:border-primary transition-colors bg-surface-container-lowest"
+              className="block border-t border-indigo/15 py-4 hover:border-accent transition-colors"
             >
-              <span className="text-headline-sm text-brand-navy font-semibold">
+              <span className="font-heading text-headline-sm text-indigo">
                 {doc.frontmatter.title}
               </span>
               <p className="text-body-md text-on-surface-variant mt-1">

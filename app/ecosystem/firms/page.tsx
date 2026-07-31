@@ -18,7 +18,7 @@ export default function FirmsPage() {
         secondaryHref="/docs/ecosystem"
         secondaryLabel="Participation models"
       />
-      <div className="prose-openlaw max-w-3xl tech-border bg-white/90 p-8">
+      <div className="prose-openlaw max-w-3xl">
         <h2>What firms do</h2>
         <ul>
           <li>Publish Open Law endpoints through a Technical Service Provider</li>

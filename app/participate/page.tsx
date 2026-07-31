@@ -18,7 +18,7 @@ export default function ParticipatePage() {
         secondaryHref="/docs/getting-started"
         secondaryLabel="Getting started"
       />
-      <div className="prose-openlaw max-w-3xl tech-border bg-white/90 p-8">
+      <div className="prose-openlaw max-w-3xl">
         <h2>Typical path</h2>
         <ol>
           <li>Read the ecosystem and participation models</li>

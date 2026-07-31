@@ -34,9 +34,7 @@ export default async function DocPage({ params }: PageProps) {
 
   return (
     <>
-      <p className="font-mono text-[10px] text-brand-emerald border border-brand-emerald/30 inline-block px-2 mb-4">
-        DOC.{slug.toUpperCase()}
-      </p>
+      <p className="text-label-md text-accent mb-4">{doc.frontmatter.title}</p>
       <MDXRemote source={doc.content} />
     </>
   );

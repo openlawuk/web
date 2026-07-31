@@ -18,7 +18,7 @@ export default function RegulatoryPage() {
         secondaryHref="/governance"
         secondaryLabel="Governance"
       />
-      <div className="prose-openlaw max-w-3xl tech-border bg-white/90 p-8">
+      <div className="prose-openlaw max-w-3xl">
         <h2>Why it matters</h2>
         <ul>
           <li>Clients choose apps; firms host infrastructure without blocking choice</li>

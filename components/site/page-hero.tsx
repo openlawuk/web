@@ -22,7 +22,7 @@ function CtaLink({
   label: string;
   variant: "primary" | "secondary";
 }) {
-  const className = cn(buttonVariants({ variant }), "px-6");
+  const className = cn(buttonVariants({ variant }));
   const external = href.startsWith("http");
   if (external) {
     return (
@@ -48,16 +48,20 @@ export function PageHero({
   secondaryLabel,
 }: PageHeroProps) {
   return (
-    <header className="py-12 md:py-16 max-w-3xl animate-fade-up">
-      <p className="text-label-caps text-brand-emerald mb-4">{eyebrow}</p>
-      <h1 className="text-headline-lg-mobile md:text-headline-lg text-brand-navy font-semibold tracking-tight mb-4">
+    <header className="py-12 md:py-20 max-w-3xl animate-fade-up">
+      <p className="text-label-md text-accent mb-4">{eyebrow}</p>
+      <h1 className="font-heading text-headline-lg-mobile md:text-headline-lg text-indigo tracking-tight mb-4">
         {title}
       </h1>
       <p className="text-body-lg text-on-surface-variant mb-8">{description}</p>
       {(primaryHref && primaryLabel) || (secondaryHref && secondaryLabel) ? (
         <div className="flex flex-wrap gap-4">
           {primaryHref && primaryLabel ? (
-            <CtaLink href={primaryHref} label={primaryLabel} variant="primary" />
+            <CtaLink
+              href={primaryHref}
+              label={primaryLabel}
+              variant="primary"
+            />
           ) : null}
           {secondaryHref && secondaryLabel ? (
             <CtaLink

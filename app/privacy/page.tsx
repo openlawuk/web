@@ -14,7 +14,7 @@ export default function PrivacyPage() {
         title="Privacy notice"
         description="This notice covers the Open Law marketing and documentation website."
       />
-      <div className="prose-openlaw max-w-3xl tech-border bg-white/90 p-8">
+      <div className="prose-openlaw max-w-3xl">
         <h2>What this site collects</h2>
         <p>
           The public site is primarily static content. We do not require an
