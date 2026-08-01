@@ -73,11 +73,28 @@ export function Header() {
             variant="ghost"
             className="lg:hidden text-indigo px-2"
             aria-expanded={open}
-            aria-label="Toggle menu"
+            aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen((value) => !value)}
           >
-            <span className="material-symbols-outlined">
-              {open ? "close" : "menu"}
+            <span className="relative flex h-4 w-5 flex-col justify-between" aria-hidden>
+              <span
+                className={cn(
+                  "block h-0.5 w-full origin-center bg-current transition-transform duration-200",
+                  open && "translate-y-[7px] rotate-45",
+                )}
+              />
+              <span
+                className={cn(
+                  "block h-0.5 w-full bg-current transition-opacity duration-200",
+                  open && "opacity-0",
+                )}
+              />
+              <span
+                className={cn(
+                  "block h-0.5 w-full origin-center bg-current transition-transform duration-200",
+                  open && "-translate-y-[7px] -rotate-45",
+                )}
+              />
             </span>
           </Button>
         </div>
