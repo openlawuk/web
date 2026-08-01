@@ -4,18 +4,28 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/standards",
+        destination: "/standard",
+        permanent: true,
+      },
+      {
+        source: "/standards/:slug*",
+        destination: "/standard/:slug*",
+        permanent: true,
+      },
+      {
         source: "/docs",
-        destination: "/standards",
+        destination: "/standard",
         permanent: true,
       },
       {
         source: "/docs/:slug*",
-        destination: "/standards/:slug*",
+        destination: "/standard/:slug*",
         permanent: true,
       },
       {
         source: "/documentation",
-        destination: "/standards",
+        destination: "/standard",
         permanent: true,
       },
       {
@@ -35,7 +45,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/documentation/:slug*",
-        destination: "/standards/:slug*",
+        destination: "/standard/:slug*",
         permanent: true,
       },
     ];

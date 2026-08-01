@@ -31,7 +31,7 @@ const resources = [
     description:
       "Ontology, JSON Schema, and participation models for legal practice data.",
     href: "https://github.com/openlawuk/specification",
-    eyebrow: "Standards",
+    eyebrow: "Standard",
     tone: "lime" as const,
     external: true,
   },
@@ -44,9 +44,9 @@ export function DevelopersPage() {
         eyebrow="Developers"
         title="Build on the open rails"
         description="Run the reference stack locally, explore OpenAPI specs, and prove compliance with the conformance suite. Use Mattertwo Connect only if you want hosted multi-firm connectivity."
-        primaryHref="/standards/conformance"
+        primaryHref="/standard/conformance"
         primaryLabel="Conformance suite"
-        secondaryHref="/standards/directory"
+        secondaryHref="/standard/directory"
         secondaryLabel="Directory"
       />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">

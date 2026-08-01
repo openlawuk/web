@@ -39,7 +39,7 @@ export function StandardsProof() {
             </h2>
           </div>
           <Link
-            href="/standards"
+            href="/standard"
             className={cn(buttonVariants({ variant: "on-color-muted" }), "self-start")}
           >
             See all standards

@@ -13,7 +13,7 @@ const staticRoutes = [
   "/ecosystem/providers",
   "/ecosystem/regulatory",
   "/news",
-  "/standards",
+  "/standard",
   "/developers",
   "/participate",
   "/about",
@@ -23,7 +23,7 @@ const staticRoutes = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const standards = getDocSlugs().map((slug) => ({
-    url: `${baseUrl}/standards/${slug}`,
+    url: `${baseUrl}/standard/${slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.7,

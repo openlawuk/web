@@ -26,7 +26,7 @@ export function Hero() {
               Explore ecosystem
             </Link>
             <Link
-              href="/standards"
+              href="/standard"
               className={cn(buttonVariants({ variant: "secondary" }))}
             >
               View standards

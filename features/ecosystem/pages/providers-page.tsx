@@ -15,7 +15,7 @@ export function ProvidersPage() {
         eyebrow="Ecosystem · TSPs"
         title="Technical service providers"
         description="TSPs implement Directory-backed Dynamic Client Registration, consent UX, and FAPI Read/Write APIs so firms can participate without building the stack from scratch."
-        primaryHref="/standards/conformance"
+        primaryHref="/standard/conformance"
         primaryLabel="Conformance suite"
         secondaryHref="/developers"
         secondaryLabel="Reference TSP"

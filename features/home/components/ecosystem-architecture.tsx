@@ -61,7 +61,7 @@ export function EcosystemArchitecture() {
 
         <div className="flex flex-wrap gap-4 justify-center">
           <Link
-            href="/standards/directory"
+            href="/standard/directory"
             className={cn(buttonVariants({ variant: "on-color" }))}
           >
             Directory documentation

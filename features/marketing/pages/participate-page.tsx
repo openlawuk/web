@@ -13,7 +13,7 @@ export function ParticipatePage() {
         eyebrow="Participate"
         title="Join the Open Law marketplace"
         description="Register as a Directory participant, publish software credentials, implement or consume Open Law APIs, and attest with the conformance suite."
-        primaryHref="/standards/directory"
+        primaryHref="/standard/directory"
         primaryLabel="Directory guide"
         secondaryHref="/developers"
         secondaryLabel="Getting started"

@@ -3,13 +3,13 @@ import { PageHero, pageMetadata } from "@/features/app/components/page-hero";
 import { ContentCard } from "@/components/ui/content-card";
 
 export const metadata: Metadata = pageMetadata(
-  "Standards",
+  "Standard",
   "Open Law specifications: Directory, DCR, Read/Write, Open Data, FAPI, and conformance.",
 );
 
 const standards = [
   {
-    href: "/standards/directory",
+    href: "/standard/directory",
     title: "Directory",
     description:
       "Trust anchor: participants, JWKS, and Software Statement Assertions.",
@@ -17,7 +17,7 @@ const standards = [
     tone: "green" as const,
   },
   {
-    href: "/standards/dcr",
+    href: "/standard/dcr",
     title: "Dynamic Client Registration",
     description:
       "RFC 7591/7592 profile so TPPs register at firm TSPs with a Directory SSA.",
@@ -25,7 +25,7 @@ const standards = [
     tone: "indigo" as const,
   },
   {
-    href: "/standards/read-write-api",
+    href: "/standard/read-write-api",
     title: "Read/Write API",
     description:
       "FAPI 2.0 resource APIs for matters, documents, financials, and more.",
@@ -33,7 +33,7 @@ const standards = [
     tone: "lime" as const,
   },
   {
-    href: "/standards/open-data-api",
+    href: "/standard/open-data-api",
     title: "Open Data API",
     description:
       "Public discovery: code lists, participants, and published prices.",
@@ -41,7 +41,7 @@ const standards = [
     tone: "peach" as const,
   },
   {
-    href: "/standards/conformance",
+    href: "/standard/conformance",
     title: "Conformance",
     description:
       "CLI suite covering directory, DCR, auth, FAPI hygiene, and client boundaries.",
@@ -70,10 +70,10 @@ export function StandardsPage() {
     <>
       <main className="section-inner w-full pb-16">
         <PageHero
-          eyebrow="Standards"
+          eyebrow="Standard"
           title="The Open Law specification stack"
           description="Normative specs live in the Open Law GitHub organisation. This site summarises how the pieces fit for implementers and product teams."
-          primaryHref="/standards/directory"
+          primaryHref="/standard/directory"
           primaryLabel="Directory"
           secondaryHref="/developers"
           secondaryLabel="Getting started"

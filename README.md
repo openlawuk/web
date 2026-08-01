@@ -29,7 +29,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Site map
 
-- Marketing: `/`, `/ecosystem/*`, `/standards`, `/developers`, `/participate`
+- Marketing: `/`, `/ecosystem/*`, `/standard`, `/developers`, `/participate`
 - Legal: `/about`, `/privacy`, `/governance`
 - Docs: `/docs/[slug]`
 

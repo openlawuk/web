@@ -10,9 +10,9 @@ export function StandardsNav() {
 
   return (
     <nav className="flex flex-col gap-1">
-      <p className="text-label-md text-accent mb-4">Standards</p>
+      <p className="text-label-md text-accent mb-4">Standard</p>
       {docsNav.map((item) => {
-        const href = `/standards/${item.slug}`;
+        const href = `/standard/${item.slug}`;
         const active = pathname === href;
         return (
           <Link

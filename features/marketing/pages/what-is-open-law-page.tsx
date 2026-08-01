@@ -14,7 +14,7 @@ export function WhatIsOpenLawPage() {
         eyebrow="What is Open Law?"
         title="One framework for every participant"
         description="Open Law is the vendor-neutral layer for legal practice data portability — Directory trust, Dynamic Client Registration, and standardised Access APIs."
-        primaryHref="/standards/directory"
+        primaryHref="/standard/directory"
         primaryLabel="Read the overview"
         secondaryHref="/ecosystem"
         secondaryLabel="Explore ecosystem"

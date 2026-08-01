@@ -15,7 +15,7 @@ export function AppsPage() {
         description="TPPs register software in the Directory, obtain SSAs, dynamically register at firm TSPs, and access Read/Write APIs under client consent — or use hosted connectivity such as Mattertwo Connect."
         primaryHref="/developers"
         primaryLabel="Developer path"
-        secondaryHref="/standards/dcr"
+        secondaryHref="/standard/dcr"
         secondaryLabel="Dynamic Client Registration"
       />
       <div className="prose-openlaw max-w-3xl">

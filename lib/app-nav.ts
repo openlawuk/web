@@ -5,9 +5,9 @@ export const mainNav = [
     match: "/what-is-open-law",
   },
   { href: "/ecosystem", label: "Ecosystem", match: "/ecosystem" },
-  { href: "/standards", label: "Standards", match: "/standards" },
   { href: "/news", label: "News & Insights", match: "/news" },
   { href: "/developers", label: "Developers", match: "/developers" },
+  { href: "/standard", label: "Standard", match: "/standard" },
 ] as const;
 
 export const footerColumns = [
@@ -16,9 +16,9 @@ export const footerColumns = [
     links: [
       { href: "/what-is-open-law", label: "What is Open Law?" },
       { href: "/ecosystem", label: "Ecosystem" },
-      { href: "/standards", label: "Standards" },
+      { href: "/standard", label: "Standard" },
       { href: "/news", label: "News & Insights" },
-      { href: "/standards/directory", label: "Directory" },
+      { href: "/standard/directory", label: "Directory" },
       { href: "/developers", label: "Developers" },
     ],
   },
@@ -28,7 +28,7 @@ export const footerColumns = [
       { href: "/participate", label: "For law firms" },
       { href: "/ecosystem/providers", label: "For TSPs" },
       { href: "/ecosystem/apps", label: "For app builders" },
-      { href: "/standards/conformance", label: "Conformance" },
+      { href: "/standard/conformance", label: "Conformance" },
     ],
   },
   {
