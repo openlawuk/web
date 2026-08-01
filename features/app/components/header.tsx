@@ -30,7 +30,7 @@ export function Header() {
             Open Law
           </Link>
           <p className="hidden md:block text-label-sm text-on-surface-variant border-l border-indigo pl-4 max-w-[14rem] leading-snug">
-            Open standards for legal data portability
+            The Open Standard for Legal Innovation
           </p>
         </div>
 
