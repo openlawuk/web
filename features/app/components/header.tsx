@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -25,8 +26,16 @@ export function Header() {
         <div className="flex items-center gap-3 md:gap-4">
           <Link
             href="/"
-            className="font-heading text-headline-sm text-indigo tracking-tight hover:text-accent transition-colors"
+            className="flex items-center gap-2.5 font-heading text-headline-sm text-indigo tracking-tight hover:text-accent transition-colors"
           >
+            <Image
+              src="/logo.png"
+              alt=""
+              width={36}
+              height={36}
+              className="size-8 md:size-9"
+              priority
+            />
             Open Law
           </Link>
           <p className="hidden md:block text-label-sm text-on-surface-variant border-l border-indigo pl-4 max-w-[14rem] leading-snug">
